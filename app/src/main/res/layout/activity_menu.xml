@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/play"
+        android:layout_alignEnd="@+id/play"
+        android:layout_marginTop="42dp"
+        android:id="@+id/replay"
+        android:onClick="replay" />
+
+    <Button
+        android:text="Play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/play"
+        android:onClick="play" />
+
+    <Button
+        android:text="Level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/level"
+        android:onClick="level"
+        android:layout_below="@+id/play"/>
+
+    <Button
+        android:text="Meilleurs scores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="scors"
+        android:layout_below="@+id/level"/>
+
+    <Button
+        android:text="À propos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:onClick="apropos"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>

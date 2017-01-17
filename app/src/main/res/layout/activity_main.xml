@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="262dp"
+            android:layout_height="29dp"
+            android:id="@+id/progress_timer"
+            android:backgroundTintMode="add"
+            android:progressDrawable="@color/colorAccent"/>
+
+        <TextView
+            android:text="0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scors"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="10"
+        >
+    </GridView>
+
+</LinearLayout>
